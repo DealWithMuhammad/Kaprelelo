@@ -1,10 +1,15 @@
-import { adminNavOptions, navOptions, styles } from "@/utils/navItems";
+import { adminNavOptions, navOptions } from "@/utils/navItems";
 import React, { Fragment } from "react";
 
 const isAdminView = true;
-const isAuthUser = false;
+const isAuthUser = true;
 const user = {
-  role: "s",
+  role: "admin",
+};
+
+export const styles = {
+  button:
+    "mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white",
 };
 
 function NavItems() {
